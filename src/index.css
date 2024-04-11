@@ -1,0 +1,57 @@
+html {
+    background-color: rgb(110, 168, 219);
+}
+
+.sidebar {
+    position: fixed;
+    padding-top: 20px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 70px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+    z-index: 999;
+    -webkit-transition: left 300ms;
+    -o-transition: left 300ms;
+    transition: left 300ms;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-content: start;
+    grid-row-gap: 10px;
+}
+.main-icon {
+    max-width: 35px;
+}
+.sub-icon {
+    max-width: 30px;
+}
+.icon {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.521);
+}
+.live-content {
+    padding-left: 90px;
+}
+.tasks {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    border-style: solid;
+    border-color: black;
+    align-items: center;
+}
+.task{
+    border-style: solid;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.521);
+}

@@ -1,0 +1,40 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "task": "Complete Task List",
+      "start": "2024-04-10",
+      "due": "2024-04-11",
+      "priority": "High",
+      "description": "Complete creating a working task list for the Phase 2 project",
+      "complete": true
+    },
+    {
+      "id": "2",
+      "task": "Complete Calender",
+      "start": "2024-04-11",
+      "due": "2024-04-13",
+      "priority": "Medium",
+      "description": "Complete creating a working calender for the Phase 2 project",
+      "complete": false
+    },
+    {
+      "id": "3",
+      "task": "Complete Stat graph",
+      "start": "2024-04-13",
+      "due": "2024-04-15",
+      "priority": "Low",
+      "description": "If time allows create some sort of stat graph that utilizes the data from tasks",
+      "complete": false
+    },
+    {
+      "id": "2b00",
+      "task": "Dog walk",
+      "description": "Dog needs steps, yes he does!",
+      "start": "2024-04-10",
+      "due": "2024-04-10",
+      "priority": "Low",
+      "complete": false
+    }
+  ]
+}
