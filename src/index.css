@@ -1,5 +1,11 @@
 html {
     background-color: rgb(110, 168, 219);
+    font-family: Poppins;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url('./fonts/Poppins/Poppins-Regular.ttf');
 }
 
 .sidebar {
@@ -15,11 +21,11 @@ html {
     top: 0;
     left: 0;
     bottom: 0;
-    overflow-y: auto;
+    /* overflow-y: auto;
     z-index: 999;
     -webkit-transition: left 300ms;
     -o-transition: left 300ms;
-    transition: left 300ms;
+    transition: left 300ms; */
     display: grid;
     justify-content: center;
     justify-items: center;
@@ -43,15 +49,50 @@ html {
 .tasks {
     display: flex;
     justify-content: space-around;
-    padding: 30px;
-    border-style: solid;
-    border-color: black;
-    align-items: center;
+    align-items: stretch;
+}
+.tasks > * {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 70px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+    z-index: 999;
+    -webkit-transition: left 300ms;
+    -o-transition: left 300ms;
+    transition: left 300ms;
+
+    flex: 1;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 15px;
 }
 .task{
-    border-style: solid;
+    /* border-style: solid;
     margin: 5px;
     padding: 5px;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.521);
+    background-color: rgba(255, 255, 255, 0.521); */
+
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    overflow-y: auto;
+    z-index: 999;
+    -webkit-transition: left 300ms;
+    -o-transition: left 300ms;
+    transition: left 300ms;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 15px;
+}
+.form > * {
+    margin-bottom: 10px
 }

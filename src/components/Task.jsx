@@ -13,7 +13,7 @@ function Task({currentTask, setTaskArray, setSortedArray}){
             (<p onClick={() => setExpanded(!expanded)}>{`${task}: ${start} to ${due}`}</p>) : 
             (<div onClick={() => setExpanded(!expanded)}>
                 <strong>{`${task}: ${start} to ${due}`}</strong>
-                <p>{priority}</p>
+                <p>{`Priority: ${priority}`}</p>
                 <p>{description}</p>
                 <button onClick={(event) => {
                     event.stopPropagation()
@@ -26,7 +26,7 @@ function Task({currentTask, setTaskArray, setSortedArray}){
             return (
             <div>
                 <strong><EditableText name='task'/>: <EditableText name='start'/> to <EditableText name='due'/></strong>
-                <p><EditableText name='priority'/></p>
+                <p>Priority: <EditableText name='priority'/></p>
                 <p><EditableText name='description'/></p>
                 <button onClick={(event) => {
                     event.stopPropagation()

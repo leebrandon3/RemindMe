@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import '../index.css'
 
 function AddTask({setTaskArray}) {
 
@@ -30,32 +31,35 @@ function AddTask({setTaskArray}) {
     }
 
     return (
-        <form onSubmit={handleSubmit}> 
-            <label htmlFor='task'>Task: </label>
-            <input name='task' placeholder='Dog Walk' onChange={handleChange} value={formObj.task}/>
-            <br/>
-
-            <label htmlFor='description'>Description: </label>
-            <input name='description' placeholder='Doggo needs his steps' onChange={handleChange} value={formObj.description}/>
-            <br/>
-
-            <label htmlFor='start'>Start Date: </label>
-            <input name='start' type='date' onChange={handleChange} value={formObj.start}/>
-            <br/>
-
-            <label htmlFor='due'>Due Date: </label>
-            <input name='due' type='date' onChange={handleChange} value={formObj.due}/>
-            <br/>
-
-            <label htmlFor='priority-select'>Priority: </label>
-            <select name='priority' id='priority-select' onChange={handleChange} value={formObj.priority}>
-                <option value='Low'>Low</option>
-                <option value='Medium'>Medium</option>
-                <option value='High'>high</option>
-            </select>
-            <br/>
-
-            <input type='submit' value='TASK'/>
+        <form onSubmit={handleSubmit} className='form'> 
+            <h3>Add new task</h3>
+            <div>
+                <label htmlFor='task'>Task: </label>
+                <input name='task' placeholder='Dog Walk' onChange={handleChange} value={formObj.task}/>
+            </div>
+            <div>
+                <label htmlFor='description'>Description: </label>
+                <input name='description' placeholder='Doggo needs his steps' onChange={handleChange} value={formObj.description}/>
+            </div>
+            <div>
+                <label htmlFor='start'>Start Date: </label>
+                <input name='start' type='date' onChange={handleChange} value={formObj.start}/>
+            </div>
+            <div>
+                <label htmlFor='due'>Due Date: </label>
+                <input name='due' type='date' onChange={handleChange} value={formObj.due}/>
+            </div>
+            <div>
+                <label htmlFor='priority-select'>Priority: </label>
+                <select name='priority' id='priority-select' onChange={handleChange} value={formObj.priority}>
+                    <option value='Low'>Low</option>
+                    <option value='Medium'>Medium</option>
+                    <option value='High'>high</option>
+                </select>
+            </div>
+            <div>
+                <input type='submit' value='Submit'/>
+            </div>
         </form>
     )
 }
