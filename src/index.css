@@ -73,12 +73,6 @@ html {
     border-radius: 15px;
 }
 .task{
-    /* border-style: solid;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.521); */
-
     background: rgba(255, 255, 255, 0.4);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(0px);
@@ -95,4 +89,43 @@ html {
 }
 .form > * {
     margin-bottom: 10px
+}
+.week {
+    display: grid;
+    grid-auto-flow: column;
+}
+.week > * {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 5px;
+}
+@media only screen and (max-width: 900px) {
+    .week {
+        grid-auto-flow: row;
+    }
+}
+.home {
+    text-align: center;
+}
+.weeklyTasks {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.85);
+}
+.completed {
+    text-decoration: line-through;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    opacity: 0.3;
+}
+.priority-High{
+    color: red;
+}
+.priority-Medium{
+    color: orange;
+}
+.priority-Low{
+    color: yellow;
 }

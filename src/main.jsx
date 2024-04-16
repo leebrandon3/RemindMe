@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client'
 import App from './components/App.jsx'
 import Home from './components/Home.jsx'
 import TaskPage from './components/TaskPage.jsx'
-import Calender from './components/Calender.jsx'
+import CalenderPage from './components/Calender.jsx'
 import Graph from './components/Graph.jsx'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
@@ -24,10 +24,10 @@ const routes = [
       },
       {
         path: 'calender',
-        element: <Calender />
+        element: <CalenderPage />
       },
       {
-        path: 'demographics',
+        path: 'graph',
         element: <Graph />
       }
     ]

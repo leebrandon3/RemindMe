@@ -16,7 +16,7 @@
       "due": "2024-04-13",
       "priority": "Medium",
       "description": "Complete creating a working calender for the Phase 2 project",
-      "complete": false
+      "complete": true
     },
     {
       "id": "3",
@@ -34,6 +34,51 @@
       "start": "2024-04-10",
       "due": "2024-04-10",
       "priority": "Low",
+      "complete": true
+    },
+    {
+      "id": "dc37",
+      "task": "Weekly calender",
+      "description": "Create a weekly calender for RemindMe that displays the tasks to be completed this week.",
+      "start": "2024-04-15",
+      "due": "2024-04-17",
+      "priority": "Medium",
+      "complete": true
+    },
+    {
+      "id": "5302",
+      "task": "Buy human food",
+      "description": "Eat as humans do",
+      "start": "2024-04-19",
+      "due": "2024-04-19",
+      "priority": "Low",
+      "complete": false
+    },
+    {
+      "id": "bb1f",
+      "task": "Binge all of Game of Thrones",
+      "description": "",
+      "start": "2024-04-20",
+      "due": "2024-04-20",
+      "priority": "High",
+      "complete": false
+    },
+    {
+      "id": "906b",
+      "task": "Learn CSS",
+      "description": "",
+      "start": "2024-04-19",
+      "due": "2024-04-20",
+      "priority": "Medium",
+      "complete": false
+    },
+    {
+      "id": "3822",
+      "task": "Finalize Project",
+      "description": "Make the final touches to the project for Phase 2",
+      "start": "2024-04-17",
+      "due": "2024-04-17",
+      "priority": "High",
       "complete": false
     }
   ]

@@ -1,6 +1,8 @@
 import home from '../images/home.svg'
 import task from '../images/tasks.svg'
 import calender from '../images/calender.svg'
+import graph from '../images/graph.svg'
+
 import '../index.css'
 import { Link } from 'react-router-dom'
 
@@ -15,6 +17,9 @@ function Navbar() {
         </Link>
         <Link to='/calender'>
             <img className={'sub-icon icon'} src={calender} alt="SVG"/>
+        </Link>
+        <Link to='/Graph'>
+            <img className={'sub-icon icon'} src={graph} alt="SVG"/>
         </Link>
     </div>
   );

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import '../index.css'
 
-function AddTask({setTaskArray}) {
+function AddTask({setTaskArray, setSortedArray}) {
 
     const [formObj,setFormObj] = useState({
         task: '',
@@ -27,7 +27,10 @@ function AddTask({setTaskArray}) {
         body: JSON.stringify({...formObj, complete: false})
         })
         .then(res => res.json())
-        .then(data => setTaskArray(taskArray => [...taskArray, data]))
+        .then(data => {
+            setTaskArray(taskArray => [...taskArray, data])
+            setSortedArray(sortedArray => [...sortedArray, data])
+        })
     }
 
     return (

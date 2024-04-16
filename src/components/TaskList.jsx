@@ -1,17 +1,6 @@
-import { useState,useEffect } from 'react';
 import Task from './Task'
 
-function TaskList({taskArray, setTaskArray}) {
-    const [sortedArray, setSortedArray] = useState([])
-    useEffect(() => {
-        fetch('http://localhost:3000/tasks')
-        .then(res => res.json())
-        .then(data => {
-            setTaskArray(data)
-            setSortedArray(data)
-        })
-      },[])
-    console.log(sortedArray)
+function TaskList({taskArray, setTaskArray, sortedArray, setSortedArray}) {
 
     const mappedTasks = sortedArray.map(index => <Task key={index.id} currentTask={index} setTaskArray={setTaskArray} setSortedArray={setSortedArray}/>)
 
